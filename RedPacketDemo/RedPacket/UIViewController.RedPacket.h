@@ -12,6 +12,7 @@
 @interface UIViewController (RedPacket)
 @property (nonatomic, strong) UIView     *windowUv;
 @property (nonatomic, strong) RewardInfo *rewardInfoForRedPacket;
+
 /**
  *  初始化并显示红包
  *

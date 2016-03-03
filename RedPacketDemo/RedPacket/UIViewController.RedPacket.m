@@ -42,8 +42,7 @@ static const void *RewardInfoKey = &RewardInfoKey;
     if (rewardInfo.rewardStatus == 1 || rewardInfo.rewardStatus == 2) {
         return;
     }
-    CGFloat width = CGRectGetWidth(self.view.frame);
-    CGFloat ratio = width/320;
+    CGFloat ratio = CGRectGetWidth(self.view.frame)/320;
     self.rewardInfoForRedPacket = rewardInfo;
     self.windowUv = [[UIView alloc] initWithFrame:self.view.frame];
     [self.windowUv setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.7]];
@@ -65,8 +64,7 @@ static const void *RewardInfoKey = &RewardInfoKey;
     label.font = [UIFont boldSystemFontOfSize:16];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor     = RGBACOLOR( 219 , 29 , 56 , 1);
-    label.text          = [NSString stringWithFormat:@"%.2f元红包",
-                           self.rewardInfoForRedPacket.money];
+    label.text          = [NSString stringWithFormat:@"%.2f元红包",self.rewardInfoForRedPacket.money];
     label.tag           = 12;
     label.hidden        = YES;
     [self.windowUv addSubview:label];
@@ -129,10 +127,6 @@ static const void *RewardInfoKey = &RewardInfoKey;
     UIButton* button = sender;
     button.enabled   = NO;
     //TODO 自定义分享方式
-}
-
--(void)enableButton:(UIButton*)button {
-    button.enabled = YES;
 }
 
 - (void)cancelButtonClicked:(id)sender {
