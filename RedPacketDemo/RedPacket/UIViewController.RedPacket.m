@@ -33,7 +33,7 @@ static const void *RewardInfoKey = &RewardInfoKey;
 }
 
 #pragma 
-- (void)initRedPacketWindow:(RewardInfo*)rewardInfo {
+- (void)initRedPacketWindowNeedOpen:(RewardInfo*)rewardInfo{
     if (rewardInfo.rewardStatus == 3) {
         NSLog(@"红包已领完");
         //TODO 自定义提示方式
@@ -101,10 +101,11 @@ static const void *RewardInfoKey = &RewardInfoKey;
     [next addGestureRecognizer:tapGesture];
     
     [self.windowUv addSubview:next];
-    [self.view.window addSubview:self.windowUv];}
+    [self.view.window addSubview:self.windowUv];
+}
 
 
-- (void)initRedPacketWindowNeedOpen:(RewardInfo*)rewardInfo{
+- (void)initRedPacketWindow:(RewardInfo*)rewardInfo {
     if (rewardInfo.rewardStatus == 3) {
         NSLog(@"红包已领完");
         //TODO 自定义提示方式
