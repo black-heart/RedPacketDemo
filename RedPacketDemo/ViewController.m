@@ -27,7 +27,11 @@
     info.rewardName = @"示例红包";
     info.rewardContent = @"恭喜你得到红包~";
     info.rewardStatus = 0;
+    
+    //[self initRedPacketWindowNeedOpen:info];
+    
     [self initRedPacketWindow:info];
+    
 }
 
 - (void)didReceiveMemoryWarning {
