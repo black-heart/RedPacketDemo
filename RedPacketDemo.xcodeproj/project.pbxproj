@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4629160C1D62B6C10095C36F /* UIViewController.RedPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4629160B1D62B6C10095C36F /* UIViewController.RedPacket.m */; };
+		4629160F1D62B72F0095C36F /* UIViewController+RedPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4629160E1D62B72F0095C36F /* UIViewController+RedPacket.m */; };
 		468901FC1C8577CD00025FE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 468901FB1C8577CD00025FE9 /* main.m */; };
 		468901FF1C8577CD00025FE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 468901FE1C8577CD00025FE9 /* AppDelegate.m */; };
 		468902021C8577CD00025FE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468902011C8577CD00025FE9 /* ViewController.m */; };
@@ -35,8 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4629160A1D62B6C10095C36F /* UIViewController.RedPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewController.RedPacket.h; path = RedPacket/UIViewController.RedPacket.h; sourceTree = "<group>"; };
-		4629160B1D62B6C10095C36F /* UIViewController.RedPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewController.RedPacket.m; path = RedPacket/UIViewController.RedPacket.m; sourceTree = "<group>"; };
+		4629160D1D62B72F0095C36F /* UIViewController+RedPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RedPacket.h"; path = "RedPacket/UIViewController+RedPacket.h"; sourceTree = "<group>"; };
+		4629160E1D62B72F0095C36F /* UIViewController+RedPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RedPacket.m"; path = "RedPacket/UIViewController+RedPacket.m"; sourceTree = "<group>"; };
 		468901F71C8577CD00025FE9 /* RedPacketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedPacketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		468901FB1C8577CD00025FE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		468901FD1C8577CD00025FE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 		4689022D1C8580A500025FE9 /* RedPacket */ = {
 			isa = PBXGroup;
 			children = (
-				4629160A1D62B6C10095C36F /* UIViewController.RedPacket.h */,
-				4629160B1D62B6C10095C36F /* UIViewController.RedPacket.m */,
+				4629160D1D62B72F0095C36F /* UIViewController+RedPacket.h */,
+				4629160E1D62B72F0095C36F /* UIViewController+RedPacket.m */,
 				4689022E1C8580D500025FE9 /* RewardInfo.h */,
 				4689022F1C8580D500025FE9 /* RewardInfo.m */,
 			);
@@ -263,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				468902301C8580D500025FE9 /* RewardInfo.m in Sources */,
-				4629160C1D62B6C10095C36F /* UIViewController.RedPacket.m in Sources */,
+				4629160F1D62B72F0095C36F /* UIViewController+RedPacket.m in Sources */,
 				468902021C8577CD00025FE9 /* ViewController.m in Sources */,
 				468901FF1C8577CD00025FE9 /* AppDelegate.m in Sources */,
 				468901FC1C8577CD00025FE9 /* main.m in Sources */,
