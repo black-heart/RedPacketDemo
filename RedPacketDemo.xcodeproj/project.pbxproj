@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4629160C1D62B6C10095C36F /* UIViewController.RedPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4629160B1D62B6C10095C36F /* UIViewController.RedPacket.m */; };
 		468901FC1C8577CD00025FE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 468901FB1C8577CD00025FE9 /* main.m */; };
 		468901FF1C8577CD00025FE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 468901FE1C8577CD00025FE9 /* AppDelegate.m */; };
 		468902021C8577CD00025FE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468902011C8577CD00025FE9 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		468902071C8577CD00025FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468902061C8577CD00025FE9 /* Assets.xcassets */; };
 		4689020A1C8577CD00025FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468902081C8577CD00025FE9 /* LaunchScreen.storyboard */; };
 		468902301C8580D500025FE9 /* RewardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4689022F1C8580D500025FE9 /* RewardInfo.m */; };
-		468902331C8582A200025FE9 /* UIViewController+RedPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 468902321C8582A200025FE9 /* UIViewController+RedPacket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4629160A1D62B6C10095C36F /* UIViewController.RedPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewController.RedPacket.h; path = RedPacket/UIViewController.RedPacket.h; sourceTree = "<group>"; };
+		4629160B1D62B6C10095C36F /* UIViewController.RedPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewController.RedPacket.m; path = RedPacket/UIViewController.RedPacket.m; sourceTree = "<group>"; };
 		468901F71C8577CD00025FE9 /* RedPacketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedPacketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		468901FB1C8577CD00025FE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		468901FD1C8577CD00025FE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,8 +51,6 @@
 		4689021B1C8577CD00025FE9 /* RedPacketDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedPacketDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4689022E1C8580D500025FE9 /* RewardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RewardInfo.h; path = RedPacket/RewardInfo.h; sourceTree = "<group>"; };
 		4689022F1C8580D500025FE9 /* RewardInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RewardInfo.m; path = RedPacket/RewardInfo.m; sourceTree = "<group>"; };
-		468902311C8582A200025FE9 /* UIViewController+RedPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RedPacket.h"; path = "RedPacket/UIViewController+RedPacket.h"; sourceTree = "<group>"; };
-		468902321C8582A200025FE9 /* UIViewController+RedPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RedPacket.m"; path = "RedPacket/UIViewController+RedPacket.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +124,10 @@
 		4689022D1C8580A500025FE9 /* RedPacket */ = {
 			isa = PBXGroup;
 			children = (
+				4629160A1D62B6C10095C36F /* UIViewController.RedPacket.h */,
+				4629160B1D62B6C10095C36F /* UIViewController.RedPacket.m */,
 				4689022E1C8580D500025FE9 /* RewardInfo.h */,
 				4689022F1C8580D500025FE9 /* RewardInfo.m */,
-				468902311C8582A200025FE9 /* UIViewController+RedPacket.h */,
-				468902321C8582A200025FE9 /* UIViewController+RedPacket.m */,
 			);
 			name = RedPacket;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				468902301C8580D500025FE9 /* RewardInfo.m in Sources */,
-				468902331C8582A200025FE9 /* UIViewController+RedPacket.m in Sources */,
+				4629160C1D62B6C10095C36F /* UIViewController.RedPacket.m in Sources */,
 				468902021C8577CD00025FE9 /* ViewController.m in Sources */,
 				468901FF1C8577CD00025FE9 /* AppDelegate.m in Sources */,
 				468901FC1C8577CD00025FE9 /* main.m in Sources */,
@@ -490,6 +490,7 @@
 				468902261C8577CD00025FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		468902271C8577CD00025FE9 /* Build configuration list for PBXNativeTarget "RedPacketDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +499,7 @@
 				468902291C8577CD00025FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4689022A1C8577CD00025FE9 /* Build configuration list for PBXNativeTarget "RedPacketDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +508,7 @@
 				4689022C1C8577CD00025FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
