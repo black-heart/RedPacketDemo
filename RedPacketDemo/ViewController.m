@@ -22,11 +22,14 @@
 
 
 - (IBAction)btnGetRedPacket:(id)sender {
-    RewardInfo *info = [[RewardInfo alloc] init];
-    info.money = 100.0;
-    info.rewardName = @"示例红包";
-    info.rewardContent = @"恭喜你得到红包~";
-    info.rewardStatus = 0;
+    RewardInfo *info = ({
+        RewardInfo *info   = [[RewardInfo alloc] init];
+        info.money         = 100.0;
+        info.rewardName    = @"示例红包";
+        info.rewardContent = @"恭喜你得到红包~";
+        info.rewardStatus  = 0;
+        info;
+    });
     
     //[self initRedPacketWindowNeedOpen:info];
     

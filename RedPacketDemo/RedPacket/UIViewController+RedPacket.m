@@ -15,7 +15,7 @@ static const void *RewardInfoKey = &RewardInfoKey;
 
 @dynamic windowUv;
 @dynamic rewardInfoForRedPacket;
-
+#pragma mark - Setter && getter
 - (UIView*)windowUv {
     return objc_getAssociatedObject(self, WindowUvKey);
 }
@@ -32,7 +32,7 @@ static const void *RewardInfoKey = &RewardInfoKey;
     objc_setAssociatedObject(self, RewardInfoKey,rewardInfoForRedPacket,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-#pragma 
+#pragma mark - Inition && Function
 - (void)initRedPacketWindowNeedOpen:(RewardInfo*)rewardInfo{
     if (rewardInfo.rewardStatus == 3) {
         NSLog(@"红包已领完");
@@ -104,7 +104,6 @@ static const void *RewardInfoKey = &RewardInfoKey;
     [self.view.window addSubview:self.windowUv];
 }
 
-
 - (void)initRedPacketWindow:(RewardInfo*)rewardInfo {
     if (rewardInfo.rewardStatus == 3) {
         NSLog(@"红包已领完");
@@ -170,13 +169,18 @@ static const void *RewardInfoKey = &RewardInfoKey;
 }
 
 - (void)nextButtonClicked:(id)sender {
-    
+   
     UIImageView* background = [self.windowUv viewWithTag:10];
     background.image        = [UIImage imageNamed:@"img_reward_packet_open"];
     UILabel* lable          = [self.windowUv viewWithTag:11];
     lable.hidden            = NO;
     lable                   = [self.windowUv viewWithTag:12];
     lable.hidden            = NO;
+        
+    lable        = [self.windowUv viewWithTag:14];
+    lable.hidden = NO;
+    lable.text   = self.rewardInfoForRedPacket.rewardContent;
+
     UIButton* button        = [self.windowUv viewWithTag:13];
     NSString* title = @"已领取过红包";
     if (self.rewardInfoForRedPacket.rewardStatus == 1) {
@@ -186,13 +190,8 @@ static const void *RewardInfoKey = &RewardInfoKey;
     }
     button.titleLabel.text = title;
     [button setTitle:title forState:UIControlStateNormal];
-    
     UITapGestureRecognizer*tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(shareButtonPress:)];
     [button addGestureRecognizer:tapGesture];
-    
-    lable        = [self.windowUv viewWithTag:14];
-    lable.hidden = NO;
-    lable.text   = self.rewardInfoForRedPacket.rewardContent;
 }
 
 - (void)shareButtonPress:(id)sender {
